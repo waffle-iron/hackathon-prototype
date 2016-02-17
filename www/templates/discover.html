@@ -1,6 +1,6 @@
 <ion-view title="Discover">
   <ion-content>
-    <div class="list card current-discovery" on-swipe="discover()">
+    <div class="list card current-discovery" on-swipe-left="discover(false)" on-swipe-right="discover(true)">
 
       <div class="item">
         <h1>{{ currentDiscovery.title }}</h1>

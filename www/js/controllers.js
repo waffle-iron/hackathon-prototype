@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['ionic', 'starter.services'])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
@@ -43,7 +43,13 @@ angular.module('starter.controllers', [])
 
 .controller('SettingsCtrl', function($scope, $stateParams) {})
 
-.controller('DiscoverCtrl', function($scope, $stateParams) {
+.controller('FavouritesCtrl', function($scope, Favourite) {
+  //Update the list of favourited items
+  console.log(Favourite);
+  $scope.favourites = Favourite.list;
+})
+
+.controller('DiscoverCtrl', function($scope, $stateParams, Favourite) {
     //Initialize mock data to randomize through
     $scope.discoveries = [
       {
@@ -66,7 +72,11 @@ angular.module('starter.controllers', [])
   //Set initial discovery
   $scope.currentDiscovery = angular.copy($scope.discoveries[0]);
 
-  $scope.discover = function() {
+  $scope.discover = function(liked) {
+
+    if(liked) {
+      Favourite.addToList($scope.currentDiscovery);
+    }
     var randomDiscovery = Math.round(Math.random() * ($scope.discoveries.length - 1));
     $scope.currentDiscovery = angular.copy($scope.discoveries[randomDiscovery]);
   }
