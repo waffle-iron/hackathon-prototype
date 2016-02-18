@@ -13,4 +13,21 @@ angular.module('starter.services', [])
   };
 
   return object;
+})
+.factory('Discovery', function($http, SERVER){
+  var object = {
+    element: {}
+  };
+
+  object.getNext = function() {
+    var random = Math.round(Math.random() * 10);
+    return $http({
+      method: "GET",
+      url: SERVER.url + "/" + random
+    }).success(function(data) {
+      object.element = data;
+    });
+  };
+
+  return object;
 });

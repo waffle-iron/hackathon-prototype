@@ -49,35 +49,20 @@ angular.module('starter.controllers', ['ionic', 'starter.services'])
   $scope.favourites = Favourite.list;
 })
 
-.controller('DiscoverCtrl', function($scope, $stateParams, Favourite) {
-    //Initialize mock data to randomize through
-    $scope.discoveries = [
-      {
-        "title": "Hello",
-        "image": "hello.png"
-      },
-      {
-        "title": "World",
-        "image": "world.png"
-      },
-      {
-        "title": "Foo",
-        "image": "foo.png"
-      },
-      {
-        "title": "Bar",
-        "image": "bar.png"
-      },
-  ];
+.controller('DiscoverCtrl', function($scope, $stateParams, Favourite, Discovery) {
   //Set initial discovery
-  $scope.currentDiscovery = angular.copy($scope.discoveries[0]);
+  Discovery.getNext().then(function() {
+    $scope.currentDiscovery = Discovery.element;
+  });
+  console.log($scope.currentDiscovery);
 
   $scope.discover = function(liked) {
 
     if(liked) {
       Favourite.addToList($scope.currentDiscovery);
     }
-    var randomDiscovery = Math.round(Math.random() * ($scope.discoveries.length - 1));
-    $scope.currentDiscovery = angular.copy($scope.discoveries[randomDiscovery]);
+    Discovery.getNext().then(function() {
+      $scope.currentDiscovery = Discovery.element;
+    });
   }
 });
