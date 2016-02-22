@@ -20,7 +20,7 @@ angular.module('starter.services', [])
   };
 
   object.getNext = function() {
-    var random = Math.round(Math.random() * 10);
+    var random = Math.floor(Math.random() * 10) + 1;
     return $http({
       method: "GET",
       url: SERVER.url + "/" + random
