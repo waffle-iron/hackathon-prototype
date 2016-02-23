@@ -60,6 +60,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'FavouritesCtrl'
       }
     }
+  })
+
+  .state('app.searches', {
+    url: '/searches',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/searches.html',
+        controller: 'SearchesCtrl'
+      }
+    }
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/discover');

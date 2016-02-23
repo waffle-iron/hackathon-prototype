@@ -4,14 +4,14 @@
       <ion-nav-back-button></ion-nav-back-button>
 
       <ion-nav-buttons side="right">
-        <button class="button button-icon button-clear ion-gear-a" ng-click="goTo('app.settings')"></button>
-        <button class="button button-icon button-clear ion-folder" ng-click="goTo('app.favourites')"></button>
+        <button class="button button-icon button-clear ion-gear-a" ui-sref="app.settings"></button>
+        <button class="button button-icon button-clear ion-folder" ui-sref="app.favourites"></button>
         <button class="button button-icon button-clear ion-navicon" menu-toggle="right"></button>
       </ion-nav-buttons>
     </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>
     <ion-footer-bar align-title="left" class="bar-positive">
-      <h1 class="title">&copy; publicplan GmBH</h1>
+      <h1 class="title">&copy; publicplan GmbH</h1>
     </ion-footer-bar>
   </ion-side-menu-content>
 
@@ -22,16 +22,10 @@
     <ion-content>
       <ion-list>
         <ion-item menu-close ng-click="login()">
-          Profile
+          Login/Profile
         </ion-item>
-        <ion-item menu-close href="#/app/discover">
-          Discover
-        </ion-item>
-        <ion-item menu-close href="#/app/favourites">
-          Favoriten
-        </ion-item>
-        <ion-item menu-close href="#/app/settings">
-          Settings
+        <ion-item menu-close href="#/app/searches">
+          Alte Suche
         </ion-item>
       </ion-list>
     </ion-content>

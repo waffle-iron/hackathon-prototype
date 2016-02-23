@@ -39,11 +39,9 @@ angular.module('starter.controllers', ['ionic', 'starter.services'])
       $scope.closeLogin();
     }, 1000);
   };
-
-  $scope.goTo = function(url) {
-    $state.go(url);
-  };
 })
+
+.controller('SearchesCtrl', function($scope, $stateParams) {})
 
 .controller('SettingsCtrl', function($scope, $stateParams) {})
 
