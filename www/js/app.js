@@ -76,4 +76,9 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 })
 .constant('SERVER', {
   url: "http://demo2144154.mockable.io"
+})
+.constant('LEARN_LINE', {
+  url: "http://www.learnline.schulministerium.nrw.de/learnline3-rest/rest/609940d5-3393-40e3-a0a7-5bdb7b87d22f",
+  search: "/search?q=",
+  facets: []
 });

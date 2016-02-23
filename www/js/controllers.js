@@ -55,8 +55,8 @@ angular.module('starter.controllers', ['ionic', 'starter.services'])
   //Set initial discovery
   Discovery.getNext().then(function() {
     $scope.currentDiscovery = Discovery.element;
+    console.log(Discovery.learnline);
   });
-  console.log($scope.currentDiscovery);
 
   $scope.discover = function(liked) {
 
