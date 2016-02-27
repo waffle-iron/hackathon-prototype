@@ -16,7 +16,7 @@ Style Files:
       </ion-nav-buttons>
 
       <ion-nav-buttons side="right">
-        <button class="button button-icon button-clear ion-android-search" ui-sref="app.settings"></button>
+        <button class="button button-icon button-clear ion-android-search" ui-sref="app.search"></button>
       </ion-nav-buttons>
     </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>
@@ -28,15 +28,19 @@ Style Files:
       <!-- Usual List -->
       <ion-list>
         <ion-item menu-close ng-click="login()">
+          <i class="icon ion-person padding-right"></i>
           Login
         </ion-item>
-        <ion-item menu-close href="#/app/searches">
+        <div class="item item-divider item-dark"><br><br></div>
+        <ion-item menu-close ui-sref="app.result">
+          <i class="icon ion-ios-list-outline padding-right"></i>
           Suchhistorie
         </ion-item>
-        <ion-item menu-close href="#/app/contact">
+        <div class="item item-divider item-dark"><br><br></div>
+        <ion-item menu-close ui-sref="app.contact">
           Kontakt
         </ion-item>
-        <ion-item menu-close href="#/app/imprint">
+        <ion-item menu-close ui-sref="app.imprint">
           Impressum
         </ion-item>
         <!-- Usual List -->

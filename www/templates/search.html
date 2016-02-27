@@ -1,66 +1,68 @@
-<ion-view title="Suche">
+<ion-view title="Suche" class="gemionic-theme">
   <ion-content>
-    <form>
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">Suchbegriff</span>
-  		    <input type="text" ng-model="search.term">
-  		  </label>
-        <label class="item item-input item-select">
-          <span class="input-label">Fach</span>
-          <select ng-model="search.subject">
-            <option>Mathematik</option>
-            <option>Biologie</option>
-            <option>Geographie</option>
-            <option>Physik</option>
-            <option>Sachkunde</option>
-            <option>Deutsch</option>
-            <option>Chemie</option>
-            <option>Politische Bildung</option>
-            <option>Geschichte</option>
-            <option>Fremdsprachen</option>
-            <option>Ethik</option>
-            <option>Englisch</option>
-            <option>Medienpädagogik</option>
-            <option>Sachgebietsübergreifende Medien</option>
-            <option>Zoologie</option>
-            <option>Tiere</option>
-            <option>Religion</option>
-            <option>Berufliche Bildung</option>
-            <option>Literatur</option>
-            <option>Kinder- und Jugendbildung</option>
-          </select>
-        </label>
-        <label class="item item-input item-select">
-          <span class="input-label">Kontext</span>
-          <select ng-model="search.class">
-            <option>Allgemeinbildende Schule</option>
-            <option>Sekundarstufe I</option>
-            <option>Sekundarstufe II</option>
-            <option>Primarstufe</option>
-            <option>Berufliche Bildung</option>
-            <option>Erwachsenenbildung</option>
-            <option>Hochschulbildung</option>
-            <option>Lehrerfort- und Weiterbildung</option>
-            <option>Elementarbildung</option>
-            <option>Sonderpädagogische Förderung</option>
-          </select>
-        </label>
-        <!--<label class="item item-input item-select">-->
-          <!--<span class="input-label">Ort</span>-->
-          <!--<select ng-model="search.location" placeholder="Ort">-->
-            <!--<option>Aachen</option>-->
-            <!--<option>Düsseldorf</option>-->
-            <!--<option>Wuppertal</option>-->
-          <!--</select>-->
-        <!--</label>-->
-        <label class="item">
-          <button type="submit" class="button button-assertive button-block gem-login--submit-button"
-            ng-click="performSearch()">
-            Suchen
-          </button>
-        </label>
-      </div>
-    </form>
+    <div class="gem-content">
+      <form>
+        <div class="list">
+          <label class="item item-input">
+            <span class="input-label">Suchbegriff</span>
+            <input type="text" ng-model="search.term">
+          </label>
+          <label class="item item-input item-select">
+            <span class="input-label">Fach</span>
+            <select ng-model="search.subject">
+              <option>Mathematik</option>
+              <option>Biologie</option>
+              <option>Geographie</option>
+              <option>Physik</option>
+              <option>Sachkunde</option>
+              <option>Deutsch</option>
+              <option>Chemie</option>
+              <option>Politische Bildung</option>
+              <option>Geschichte</option>
+              <option>Fremdsprachen</option>
+              <option>Ethik</option>
+              <option>Englisch</option>
+              <option>Medienpädagogik</option>
+              <option>Sachgebietsübergreifende Medien</option>
+              <option>Zoologie</option>
+              <option>Tiere</option>
+              <option>Religion</option>
+              <option>Berufliche Bildung</option>
+              <option>Literatur</option>
+              <option>Kinder- und Jugendbildung</option>
+            </select>
+          </label>
+          <label class="item item-input item-select">
+            <span class="input-label">Kontext</span>
+            <select ng-model="search.class">
+              <option>Allgemeinbildende Schule</option>
+              <option>Sekundarstufe I</option>
+              <option>Sekundarstufe II</option>
+              <option>Primarstufe</option>
+              <option>Berufliche Bildung</option>
+              <option>Erwachsenenbildung</option>
+              <option>Hochschulbildung</option>
+              <option>Lehrerfort- und Weiterbildung</option>
+              <option>Elementarbildung</option>
+              <option>Sonderpädagogische Förderung</option>
+            </select>
+          </label>
+          <!--<label class="item item-input item-select">-->
+            <!--<span class="input-label">Ort</span>-->
+            <!--<select ng-model="search.location" placeholder="Ort">-->
+              <!--<option>Aachen</option>-->
+              <!--<option>Düsseldorf</option>-->
+              <!--<option>Wuppertal</option>-->
+            <!--</select>-->
+          <!--</label>-->
+          <label class="item">
+            <button type="submit" class="button button-assertive button-block gem-login--submit-button"
+              ng-click="performSearch()">
+              Los geht's!
+            </button>
+          </label>
+        </div>
+      </form>
+    </div>
   </ion-content>
 </ion-view>

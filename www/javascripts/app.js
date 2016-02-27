@@ -6,7 +6,8 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('hackathon', [
   'ionic',
-  'ionic.utils'
+  'ionic.utils',
+  'firebase'
 ])
 
   .run(function ($ionicPlatform) {
