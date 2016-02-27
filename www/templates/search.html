@@ -1,14 +1,14 @@
-<ion-view title="Settings">
+<ion-view title="Suche">
   <ion-content>
-    <form ng-submit="">
+    <form>
       <div class="list">
         <label class="item item-input">
-          <span class="input-label">Ort</span>
-  		    <input type="text" ng-model="Settings.term">
+          <span class="input-label">Suchbegriff</span>
+  		    <input type="text" ng-model="search.term">
   		  </label>
         <label class="item item-input item-select">
           <span class="input-label">Fach</span>
-          <select ng-model="Settings.subject">
+          <select ng-model="search.subject">
             <option>Mathematik</option>
             <option>Biologie</option>
             <option>Geographie</option>
@@ -31,21 +31,33 @@
             <option>Kinder- und Jugendbildung</option>
           </select>
         </label>
-        <label class="item item-input">
-          <span class="input-label">Klasse</span>
-          <input type="text" ng-model="Settings.interest">
-        </label>
         <label class="item item-input item-select">
-          <span class="input-label">Ort</span>
-          <select ng-model="Settings.centers" placeholder="Ort">
-            <option>Aachen</option>
-            <option>Düsseldorf</option>
-            <option>Wuppertal</option>
+          <span class="input-label">Kontext</span>
+          <select ng-model="search.class">
+            <option>Allgemeinbildende Schule</option>
+            <option>Sekundarstufe I</option>
+            <option>Sekundarstufe II</option>
+            <option>Primarstufe</option>
+            <option>Berufliche Bildung</option>
+            <option>Erwachsenenbildung</option>
+            <option>Hochschulbildung</option>
+            <option>Lehrerfort- und Weiterbildung</option>
+            <option>Elementarbildung</option>
+            <option>Sonderpädagogische Förderung</option>
           </select>
         </label>
+        <!--<label class="item item-input item-select">-->
+          <!--<span class="input-label">Ort</span>-->
+          <!--<select ng-model="search.location" placeholder="Ort">-->
+            <!--<option>Aachen</option>-->
+            <!--<option>Düsseldorf</option>-->
+            <!--<option>Wuppertal</option>-->
+          <!--</select>-->
+        <!--</label>-->
         <label class="item">
-          <button type="submit" class="button button-assertive button-block gem-login--submit-button">
-            Speichern
+          <button type="submit" class="button button-assertive button-block gem-login--submit-button"
+            ng-click="performSearch()">
+            Suchen
           </button>
         </label>
       </div>
