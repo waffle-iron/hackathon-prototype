@@ -39,6 +39,15 @@ angular.module('hackathon')
         }
       })
 
+      .state('app.login', {
+        url: "/login",
+        views: {
+          'menuContent': {
+            templateUrl: "templates/login.html",
+          }
+        }
+      })
+
       .state('app.contact', {
         url: "/contact",
         views: {
