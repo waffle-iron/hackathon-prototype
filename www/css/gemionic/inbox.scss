@@ -1,0 +1,105 @@
+// Styles for templates/inbox.html,
+// and templates/single-message.html
+.gem-inbox {
+	.list.gem-inbox--search{
+		margin-top: 0;
+		.item.item-input {
+			background: transparentize($silver, 0.8);
+			border:none;
+			.placeholder-icon{
+					color: $alizarin;
+				    &:last-child {
+				    	padding-right: 12px;
+				    }
+			}
+		}
+	}
+
+	.gem-inbox--messages {
+		position: relative;
+		* {
+			@extend .primary-font; // scss\typography.scss
+		}
+		.message{
+			position: relative;
+			border-top:1px solid transparentize($silver, 0.8);
+			// border-bottom:1px solid transparentize($silver, 0.6);
+			padding:15px 0 5px 0;
+			&:nth-child(odd) {
+				background: transparentize($silver, 0.9);
+			}
+			&:nth-child(even) {
+				background: transparentize($silver, 1);
+			}
+			&.single-email-view {
+				background: $white;
+				.subject {
+					margin: 10px 0 0 0;
+	    			padding: 5px 0 5px 10px;
+	    			background: transparentize($silver, 0.7);
+				}
+				.email-content {
+					border-top:none;
+				    margin: 5px 15px 0 0;
+				}
+			}
+			.contact{
+				@include circle-thumb-absolute();
+				top: 15px;
+				left: 10px;
+				width: 40px;	
+			}
+			.message-details {
+				padding-left:60px;
+				h1,h2,h3,h4,h5,h6 {
+					color: #898888;
+					margin:5px 0;
+					&:first-child{
+						margin-top:0;
+					}
+				}				
+			}
+			.sender {
+				padding-right:100px;
+			}
+			.subject {
+				font-family: arial;
+			}
+			.excerpt, .email-content {
+				padding: 5px 0;
+			    border-top: 1px solid #ccc;
+			    font-size: 12px;
+			    line-height: 1.4em;
+			    margin: 10px 15px 0 0;
+			}
+			.message-actions {
+				padding:0;
+				background : transparentize($silver, 0.9);
+				border: 1px solid transparentize($silver, 0.8);
+				@include border-radius(5px);
+				.button {
+					border: none;
+					background: none;
+				}
+			}
+			.respond-section {
+				textarea {
+					width: 100%;
+					padding: 10px;
+					background: $white;
+					border: 1px solid transparentize($silver, 0.8);
+					margin:13px 0;
+					@include border-radius(7px);
+    				font-size: 13px;
+				}
+			}
+			.message-extra {
+				position: absolute;
+				color: inherit;
+				right: 15px;
+				top:20px;
+				@include opacity(0.5);
+			}
+		}
+	}
+}

@@ -1,0 +1,98 @@
+// Styles for templates/timeline.html
+.gem-timeline {
+	position: relative;
+	&:before {
+		position: absolute;
+		width: 35px;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: $silver;
+		content: "";
+		z-index: 0;
+	}
+
+	.gem-timeline--item {
+		position: relative;
+	    padding-left: 3px;
+		.thumb {
+			width: 45px;
+			height: 45px;
+			@include border-radius(500px);
+			background: $primary-color;
+			border:5px solid $secondary-color;
+			z-index: 1;
+			position: absolute;
+			overflow: hidden;
+
+			&.is-icon{
+				i {
+					font-size: 22px;
+				    position: absolute;
+				    left: 9px;
+				    top: 8px;
+				    color: white;
+				}
+			}
+			&.is-image{
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		.item-content {
+			margin-left: 55px;
+			h1,h2,h3,h4,h5,h6 {margin:5px 0;}
+			.title-icon {color:$alizarin; margin-right:5px;}
+			.date {
+				font:bold 10px arial;
+				color: #999;
+			}
+			.media {	
+		    	padding:10px 0 7px 0;
+		    	position: relative;
+		    	img {width:100%;}
+		    	.attachment-icon{
+		    		width: 30px;
+					height: 30px;
+					@include border-radius(500px);
+					background:red;
+					position:absolute;
+					top: 7px;
+    				left: 11px;
+
+					i {
+						font-size: 18px;
+					    position: absolute;
+					    left: 10.5px;
+					    top: 7px;
+					    color: white;
+					}
+		    	}
+		    	.attachment-title {
+		    		padding-left: 55px;
+    				padding-bottom: 5px;
+		    	}
+		    	&.is-audio {
+		    		background: $silver;
+		    		margin:10px 0;
+		    	}
+		    	.media-list {
+		    		background: transparentize($silver, 0.9);
+		    	}
+		    }
+		}
+		.item-action-button {
+			width: 30px;
+			height: 30px;
+			@include border-radius(500px);
+			position:absolute;
+			top: 0;
+			right: 0;
+			* {
+				color: $concrete;
+			}
+		}
+	}
+}

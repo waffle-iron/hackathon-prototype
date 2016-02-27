@@ -1,0 +1,51 @@
+// Styles for templates/login.html and forgot.html
+.gem-login {
+	&.gemionic-theme {
+		background: url('../img/demo/login-bg.png') no-repeat center top;
+	}
+	ion-content {
+		margin: 30px 50px 0 50px;
+		.gem-login--logo {
+			    width: 84px;
+		}
+		.gem-login--text-color {
+			color: $white;
+		}
+		.list.gem-login--form {
+			.item {
+				&:first-child {
+					margin-top:0;
+				}
+				&:last-child {
+					margin-bottom:0;
+				}
+				background:transparentize($mine-shaft, 0.3);
+				border: none;
+				@include border-radius(50px);
+				margin:10px 0;
+				input {color: $white;}
+				padding:10px 0 10px 25px;
+			}
+			    margin-bottom: 0;
+		}
+
+		.gem-login--submit-button {
+			@include border-radius(40px);
+			border:none;
+		}
+
+		.social-button {
+			&.google {
+				background: $alizarin;
+			}
+			&.facebook {
+				background: $peter-river;
+			}
+			color:$white;
+		    width: 60px;
+		    max-height: 60px;
+		    border-radius: 500px;
+		    min-height: 60px;
+		}
+	}
+}

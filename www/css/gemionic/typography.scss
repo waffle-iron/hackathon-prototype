@@ -1,0 +1,42 @@
+// App Wide typography
+
+//To change your fonts, copy your ttf/otf files to www/fonts 
+// folder and alter the url and font name respectively. 
+// Gemionic uses only one at the moment but you can 
+// change the $secondary-font/$secondary-font-src
+// and use the .secondary-font as needed in your designs.
+
+$primary-font : Raleway !default;
+$primary-font-src : '../fonts/Raleway-Regular.ttf';
+
+$secondary-font : Raleway !default;
+$secondary-font-src : '../fonts/Raleway-Regular.ttf';
+
+@font-face {
+    font-family: $primary-font;
+    src: url($primary-font-src) format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: $secondary-font;
+    src: url($secondary-font-src) format('truetype');
+    font-weight: 300;
+}
+
+.primary-font, .primary-font * {
+	font-family: $primary-font , Fallback, sans-serif;
+}
+
+.secondary-font, .secondary-font * {
+	font-family: $secondary-font , Fallback, sans-serif;
+}
+
+.bold {font-weight:bold;}
+.text-right {text-align: right;}
+.text-left {text-align: left;}
+.uppercase {text-transform:uppercase;}
+.no-margin {margin:0;}
+.text-ellipsis {
+	text-overflow: ellipsis;
+}

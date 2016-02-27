@@ -1,0 +1,96 @@
+// Styles for templates/feed.html
+.gem-feed {
+
+
+	.gem-feed--text {
+		font-size: 13px;
+	    padding: 10px;
+	    background: #f1f1f1;
+	    color: $mine-shaft;
+	}
+
+	.gem-feed--quote {
+		padding: 30px;
+		background: #fc3;
+		position: relative;
+		margin:10px 0 0 0;
+		&:before {
+			width:30px;
+			height: 30px;
+			@include border-radius(500px);
+			position: absolute;
+			// top: 0;
+			top:10px;
+			left:10px;
+			font-family: "Ionicons";
+			content: "\f347";
+			color:$mine-shaft;
+		}
+	}
+	
+	.gem-feed--item {
+		position: relative;
+		margin-top: 10px;
+		&:first-child {
+			margin-top:0;
+		}
+		img {width:100%;}
+		.details {
+		    padding: 10px;
+		    width: 100%;
+		    &.default-bg {
+		    	background:transparentize($silver, 0.8);
+		    	* {
+		    		color: $mine-shaft;
+		    	}
+		    }
+		    &.fixed-bottom {
+		    	position: absolute;
+		    	bottom: 0;
+		    }
+		    &.has-thumb {
+				padding: 10px 10px 10px 50px;
+				img.thumb {
+					position: absolute;
+				    width: 30px;
+				    bottom: 16px;
+				    left: 10px;
+				    @include border-radius(500px);
+				}
+			}
+			.gem-feed--actions {
+				position: absolute;
+			    right: 0;
+			    bottom: 7px;
+			    right: 5px;
+			    .button {min-width: 30px;}
+			}
+		}
+
+		&.with-gradient-bg {
+			&:before {
+				width:100%;
+				height: 60px;
+				// background: red;
+				position: absolute;
+				// top: 0;
+				bottom:0;
+				content: "";
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;1+0,0+100 */
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0+0,1+100 */
+				background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+			}
+
+			.details {
+				h1,h2,h3,h4,h5,h6,.gem-feed--actions {
+			    	color: $white;
+			    }
+			}
+
+		}
+
+	}
+}

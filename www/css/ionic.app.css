@@ -9730,3 +9730,586 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+/*Bar Colors*/
+.primary-bg-color {
+  background-color: #ef313d; }
+
+.secondary-bg-color {
+  background-color: #f8f3bc; }
+
+.accent-bg-color {
+  background-color: #1ABC9C; }
+
+.gemionic-theme {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3333+0,ff3333+28,f8f3bc+28,f8f3bc+100 */
+  background: #ef313d;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ef313d 0%, #ef313d 28%, #f8f3bc 28%, #f8f3bc 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ef313d 0%, #ef313d 28%, #f8f3bc 28%, #f8f3bc 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ef313d 0%, #ef313d 28%, #f8f3bc 28%, #f8f3bc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='$secondary-color',GradientType=0 );
+  /* IE6-9 */ }
+  .gemionic-theme .padding-double {
+    padding: 20px; }
+  .gemionic-theme .padding-double-vertical {
+    padding: 20px 0; }
+  .gemionic-theme .padding-double-horizontal {
+    padding: 0 20px; }
+  .gemionic-theme .gem-tabs {
+    position: static; }
+    .gemionic-theme .gem-tabs .tab-nav.tabs, .gemionic-theme .gem-tabs ion-tab {
+      position: static; }
+    .gemionic-theme .gem-tabs .view-container {
+      position: static; }
+    .gemionic-theme .gem-tabs .tabs {
+      border-color: none; }
+    .gemionic-theme .gem-tabs .tab-item {
+      background-color: #2E2E2E;
+      color: #fff; }
+      .gemionic-theme .gem-tabs .tab-item.tab-item-active {
+        background-color: #ef313d; }
+  .gemionic-theme .scroll-bar-indicator {
+    display: none; }
+  .gemionic-theme .row.row-wrap {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .gemionic-theme .row.row-wrap .col img {
+      width: 100%; }
+  .gemionic-theme .row.flush {
+    padding: 0; }
+    .gemionic-theme .row.flush .col {
+      padding: 0; }
+  .gemionic-theme .row.gallery {
+    padding: 10px 0; }
+    .gemionic-theme .row.gallery .col img {
+      border-radius: 10px; }
+  .gemionic-theme .bar {
+    margin: 10px 4px 0 4px;
+    width: auto; }
+    .gemionic-theme .bar .title {
+      font-weight: normal;
+      margin-top: 8px; }
+    .gemionic-theme .bar button.button {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0 5px;
+      border-radius: 500px;
+      width: 50px;
+      min-height: 50px; }
+  .gemionic-theme ion-content {
+    margin: 50px 20px 0 20px; }
+    .gemionic-theme ion-content .gem-content {
+      background-color: #fff; }
+  .gemionic-theme .grid-wrapped {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .gemionic-theme .grid-wrapped .col img {
+      width: 100%; }
+    .gemionic-theme .grid-wrapped .height-mask {
+      max-height: 195px;
+      overflow: hidden; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: 300; }
+
+.primary-font, .gem-inbox .gem-inbox--messages *, .gem-menu, .primary-font *, .gem-inbox .gem-inbox--messages * *, .gem-menu * {
+  font-family: Raleway, Fallback, sans-serif; }
+
+.secondary-font, .secondary-font * {
+  font-family: Raleway, Fallback, sans-serif; }
+
+.bold {
+  font-weight: bold; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.no-margin {
+  margin: 0; }
+
+.text-ellipsis {
+  text-overflow: ellipsis; }
+
+.gem-feed .gem-feed--text {
+  font-size: 13px;
+  padding: 10px;
+  background: #f1f1f1;
+  color: #2E2E2E; }
+
+.gem-feed .gem-feed--quote {
+  padding: 30px;
+  background: #fc3;
+  position: relative;
+  margin: 10px 0 0 0; }
+  .gem-feed .gem-feed--quote:before {
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    -ms-border-radius: 500px;
+    border-radius: 500px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: "Ionicons";
+    content: "\f347";
+    color: #2E2E2E; }
+
+.gem-feed .gem-feed--item {
+  position: relative;
+  margin-top: 10px; }
+  .gem-feed .gem-feed--item:first-child {
+    margin-top: 0; }
+  .gem-feed .gem-feed--item img {
+    width: 100%; }
+  .gem-feed .gem-feed--item .details {
+    padding: 10px;
+    width: 100%; }
+    .gem-feed .gem-feed--item .details.default-bg {
+      background: rgba(189, 195, 199, 0.2); }
+      .gem-feed .gem-feed--item .details.default-bg * {
+        color: #2E2E2E; }
+    .gem-feed .gem-feed--item .details.fixed-bottom {
+      position: absolute;
+      bottom: 0; }
+    .gem-feed .gem-feed--item .details.has-thumb {
+      padding: 10px 10px 10px 50px; }
+      .gem-feed .gem-feed--item .details.has-thumb img.thumb {
+        position: absolute;
+        width: 30px;
+        bottom: 16px;
+        left: 10px;
+        -webkit-border-radius: 500px;
+        -moz-border-radius: 500px;
+        -ms-border-radius: 500px;
+        border-radius: 500px; }
+    .gem-feed .gem-feed--item .details .gem-feed--actions {
+      position: absolute;
+      right: 0;
+      bottom: 7px;
+      right: 5px; }
+      .gem-feed .gem-feed--item .details .gem-feed--actions .button {
+        min-width: 30px; }
+  .gem-feed .gem-feed--item.with-gradient-bg:before {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    content: "";
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;1+0,0+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0+0,1+100 */
+    background: -moz-linear-gradient(top, transparent 0%, black 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, transparent 0%, black 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, transparent 0%, black 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+    /* IE6-9 */ }
+  .gem-feed .gem-feed--item.with-gradient-bg .details h1, .gem-feed .gem-feed--item.with-gradient-bg .details h2, .gem-feed .gem-feed--item.with-gradient-bg .details h3, .gem-feed .gem-feed--item.with-gradient-bg .details h4, .gem-feed .gem-feed--item.with-gradient-bg .details h5, .gem-feed .gem-feed--item.with-gradient-bg .details h6, .gem-feed .gem-feed--item.with-gradient-bg .details .gem-feed--actions {
+    color: #fff; }
+
+.gem-timeline {
+  position: relative; }
+  .gem-timeline:before {
+    position: absolute;
+    width: 35px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #BDC3C7;
+    content: "";
+    z-index: 0; }
+  .gem-timeline .gem-timeline--item {
+    position: relative;
+    padding-left: 3px; }
+    .gem-timeline .gem-timeline--item .thumb {
+      width: 45px;
+      height: 45px;
+      -webkit-border-radius: 500px;
+      -moz-border-radius: 500px;
+      -ms-border-radius: 500px;
+      border-radius: 500px;
+      background: #ef313d;
+      border: 5px solid #f8f3bc;
+      z-index: 1;
+      position: absolute;
+      overflow: hidden; }
+      .gem-timeline .gem-timeline--item .thumb.is-icon i {
+        font-size: 22px;
+        position: absolute;
+        left: 9px;
+        top: 8px;
+        color: white; }
+      .gem-timeline .gem-timeline--item .thumb.is-image img {
+        width: 100%; }
+    .gem-timeline .gem-timeline--item .item-content {
+      margin-left: 55px; }
+      .gem-timeline .gem-timeline--item .item-content h1, .gem-timeline .gem-timeline--item .item-content h2, .gem-timeline .gem-timeline--item .item-content h3, .gem-timeline .gem-timeline--item .item-content h4, .gem-timeline .gem-timeline--item .item-content h5, .gem-timeline .gem-timeline--item .item-content h6 {
+        margin: 5px 0; }
+      .gem-timeline .gem-timeline--item .item-content .title-icon {
+        color: #E74C3C;
+        margin-right: 5px; }
+      .gem-timeline .gem-timeline--item .item-content .date {
+        font: bold 10px arial;
+        color: #999; }
+      .gem-timeline .gem-timeline--item .item-content .media {
+        padding: 10px 0 7px 0;
+        position: relative; }
+        .gem-timeline .gem-timeline--item .item-content .media img {
+          width: 100%; }
+        .gem-timeline .gem-timeline--item .item-content .media .attachment-icon {
+          width: 30px;
+          height: 30px;
+          -webkit-border-radius: 500px;
+          -moz-border-radius: 500px;
+          -ms-border-radius: 500px;
+          border-radius: 500px;
+          background: red;
+          position: absolute;
+          top: 7px;
+          left: 11px; }
+          .gem-timeline .gem-timeline--item .item-content .media .attachment-icon i {
+            font-size: 18px;
+            position: absolute;
+            left: 10.5px;
+            top: 7px;
+            color: white; }
+        .gem-timeline .gem-timeline--item .item-content .media .attachment-title {
+          padding-left: 55px;
+          padding-bottom: 5px; }
+        .gem-timeline .gem-timeline--item .item-content .media.is-audio {
+          background: #BDC3C7;
+          margin: 10px 0; }
+        .gem-timeline .gem-timeline--item .item-content .media .media-list {
+          background: rgba(189, 195, 199, 0.1); }
+    .gem-timeline .gem-timeline--item .item-action-button {
+      width: 30px;
+      height: 30px;
+      -webkit-border-radius: 500px;
+      -moz-border-radius: 500px;
+      -ms-border-radius: 500px;
+      border-radius: 500px;
+      position: absolute;
+      top: 0;
+      right: 0; }
+      .gem-timeline .gem-timeline--item .item-action-button * {
+        color: #95A5A6; }
+
+.gem-inbox .list.gem-inbox--search {
+  margin-top: 0; }
+  .gem-inbox .list.gem-inbox--search .item.item-input {
+    background: rgba(189, 195, 199, 0.2);
+    border: none; }
+    .gem-inbox .list.gem-inbox--search .item.item-input .placeholder-icon {
+      color: #E74C3C; }
+      .gem-inbox .list.gem-inbox--search .item.item-input .placeholder-icon:last-child {
+        padding-right: 12px; }
+
+.gem-inbox .gem-inbox--messages {
+  position: relative; }
+  .gem-inbox .gem-inbox--messages .message {
+    position: relative;
+    border-top: 1px solid rgba(189, 195, 199, 0.2);
+    padding: 15px 0 5px 0; }
+    .gem-inbox .gem-inbox--messages .message:nth-child(odd) {
+      background: rgba(189, 195, 199, 0.1); }
+    .gem-inbox .gem-inbox--messages .message:nth-child(even) {
+      background: rgba(189, 195, 199, 0); }
+    .gem-inbox .gem-inbox--messages .message.single-email-view {
+      background: #fff; }
+      .gem-inbox .gem-inbox--messages .message.single-email-view .subject {
+        margin: 10px 0 0 0;
+        padding: 5px 0 5px 10px;
+        background: rgba(189, 195, 199, 0.3); }
+      .gem-inbox .gem-inbox--messages .message.single-email-view .email-content {
+        border-top: none;
+        margin: 5px 15px 0 0; }
+    .gem-inbox .gem-inbox--messages .message .contact {
+      -webkit-border-radius: 500px;
+      -moz-border-radius: 500px;
+      -ms-border-radius: 500px;
+      border-radius: 500px;
+      position: absolute;
+      top: 15px;
+      left: 10px;
+      width: 40px; }
+    .gem-inbox .gem-inbox--messages .message .message-details {
+      padding-left: 60px; }
+      .gem-inbox .gem-inbox--messages .message .message-details h1, .gem-inbox .gem-inbox--messages .message .message-details h2, .gem-inbox .gem-inbox--messages .message .message-details h3, .gem-inbox .gem-inbox--messages .message .message-details h4, .gem-inbox .gem-inbox--messages .message .message-details h5, .gem-inbox .gem-inbox--messages .message .message-details h6 {
+        color: #898888;
+        margin: 5px 0; }
+        .gem-inbox .gem-inbox--messages .message .message-details h1:first-child, .gem-inbox .gem-inbox--messages .message .message-details h2:first-child, .gem-inbox .gem-inbox--messages .message .message-details h3:first-child, .gem-inbox .gem-inbox--messages .message .message-details h4:first-child, .gem-inbox .gem-inbox--messages .message .message-details h5:first-child, .gem-inbox .gem-inbox--messages .message .message-details h6:first-child {
+          margin-top: 0; }
+    .gem-inbox .gem-inbox--messages .message .sender {
+      padding-right: 100px; }
+    .gem-inbox .gem-inbox--messages .message .subject {
+      font-family: arial; }
+    .gem-inbox .gem-inbox--messages .message .excerpt, .gem-inbox .gem-inbox--messages .message .email-content {
+      padding: 5px 0;
+      border-top: 1px solid #ccc;
+      font-size: 12px;
+      line-height: 1.4em;
+      margin: 10px 15px 0 0; }
+    .gem-inbox .gem-inbox--messages .message .message-actions {
+      padding: 0;
+      background: rgba(189, 195, 199, 0.1);
+      border: 1px solid rgba(189, 195, 199, 0.2);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px; }
+      .gem-inbox .gem-inbox--messages .message .message-actions .button {
+        border: none;
+        background: none; }
+    .gem-inbox .gem-inbox--messages .message .respond-section textarea {
+      width: 100%;
+      padding: 10px;
+      background: #fff;
+      border: 1px solid rgba(189, 195, 199, 0.2);
+      margin: 13px 0;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -ms-border-radius: 7px;
+      border-radius: 7px;
+      font-size: 13px; }
+    .gem-inbox .gem-inbox--messages .message .message-extra {
+      position: absolute;
+      color: inherit;
+      right: 15px;
+      top: 20px;
+      opacity: 0.5;
+      filter: alpha(opacity=50); }
+
+.gem-friend-list .badge.gem-badge {
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 500px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 27px;
+  display: block; }
+
+.gem-friend-list .gem-friend--status {
+  position: absolute;
+  left: 43px;
+  top: 11px;
+  z-index: 1;
+  font-size: 12px; }
+  .gem-friend-list .gem-friend--status.is-online {
+    color: #2ECC71; }
+  .gem-friend-list .gem-friend--status.is-away {
+    color: #F1C40F; }
+  .gem-friend-list .gem-friend--status.is-busy {
+    color: #E74C3C; }
+  .gem-friend-list .gem-friend--status.is-offline {
+    color: #BDC3C7; }
+
+.gem-viewpost.gemionic-theme, .gem-profile.gemionic-theme {
+  margin-top: -20px;
+  padding-top: 0; }
+  .gem-viewpost.gemionic-theme .bar, .gem-profile.gemionic-theme .bar {
+    background-color: none; }
+
+.gem-viewpost ion-content, .gem-profile ion-content {
+  margin: -45px 0px 0 0px; }
+
+.gem-viewpost .gem-viewpost--image img, .gem-viewpost .gem-viewpost--image .overlay, .gem-viewpost .gem-profile--image img, .gem-viewpost .gem-profile--image .overlay, .gem-profile .gem-viewpost--image img, .gem-profile .gem-viewpost--image .overlay, .gem-profile .gem-profile--image img, .gem-profile .gem-profile--image .overlay {
+  width: 100%;
+  min-height: 300px; }
+
+.gem-viewpost .gem-viewpost--image .overlay, .gem-viewpost .gem-profile--image .overlay, .gem-profile .gem-viewpost--image .overlay, .gem-profile .gem-profile--image .overlay {
+  position: absolute;
+  z-index: 2;
+  background: #2E2E2E;
+  opacity: 0.4;
+  filter: alpha(opacity=40); }
+
+.gem-viewpost .profile-details, .gem-profile .profile-details {
+  z-index: 22;
+  position: absolute;
+  top: 110px;
+  width: 100%; }
+  .gem-viewpost .profile-details .profile-text-color, .gem-profile .profile-details .profile-text-color {
+    color: #fff;
+    text-align: center; }
+  .gem-viewpost .profile-details .profile-thumb, .gem-profile .profile-details .profile-thumb {
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    -ms-border-radius: 500px;
+    border-radius: 500px;
+    border: 4px solid rgba(255, 255, 255, 0.4);
+    margin: 5px 0; }
+
+.gem-viewpost .post-details, .gem-profile .post-details {
+  margin-top: -43px;
+  z-index: 22;
+  position: absolute;
+  top: 200px;
+  width: 100%; }
+  .gem-viewpost .post-details .post-title, .gem-profile .post-details .post-title {
+    color: #fff;
+    margin: 0px 25px 35px 25px; }
+
+.gem-viewpost .profile-feed, .gem-profile .profile-feed {
+  padding: 10px; }
+
+.gem-viewpost .post-content, .gem-profile .post-content {
+  padding: 80px 20px 20px 20px; }
+
+.gem-viewpost .post-content, .gem-viewpost .profile-feed, .gem-profile .post-content, .gem-profile .profile-feed {
+  background: white;
+  margin: 20px;
+  position: relative; }
+  .gem-viewpost .post-content .post-button, .gem-viewpost .post-content .post-thumb-and-options button, .gem-viewpost .profile-feed .post-thumb-and-options .post-content button, .gem-profile .profile-feed .post-thumb-and-options .gem-viewpost .post-content button, .gem-viewpost .profile-feed .post-button, .gem-viewpost .post-content .post-thumb-and-options .profile-feed button, .gem-viewpost .profile-feed .post-thumb-and-options button, .gem-profile .post-content .post-thumb-and-options .gem-viewpost .profile-feed button, .gem-profile .post-content .post-button, .gem-viewpost .profile-feed .post-thumb-and-options .gem-profile .post-content button, .gem-profile .post-content .post-thumb-and-options button, .gem-profile .profile-feed .post-thumb-and-options .post-content button, .gem-profile .profile-feed .post-button, .gem-viewpost .post-content .post-thumb-and-options .gem-profile .profile-feed button, .gem-profile .post-content .post-thumb-and-options .profile-feed button, .gem-profile .profile-feed .post-thumb-and-options button {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    -ms-border-radius: 500px;
+    border-radius: 500px;
+    text-align: center;
+    border: none; }
+    .gem-viewpost .post-content .post-button i, .gem-viewpost .post-content .post-thumb-and-options button i, .gem-viewpost .profile-feed .post-thumb-and-options .post-content button i, .gem-profile .profile-feed .post-thumb-and-options .gem-viewpost .post-content button i, .gem-viewpost .profile-feed .post-button i, .gem-viewpost .post-content .post-thumb-and-options .profile-feed button i, .gem-viewpost .profile-feed .post-thumb-and-options button i, .gem-profile .post-content .post-thumb-and-options .gem-viewpost .profile-feed button i, .gem-profile .post-content .post-button i, .gem-viewpost .profile-feed .post-thumb-and-options .gem-profile .post-content button i, .gem-profile .post-content .post-thumb-and-options button i, .gem-profile .profile-feed .post-thumb-and-options .post-content button i, .gem-profile .profile-feed .post-button i, .gem-viewpost .post-content .post-thumb-and-options .gem-profile .profile-feed button i, .gem-profile .post-content .post-thumb-and-options .profile-feed button i, .gem-profile .profile-feed .post-thumb-and-options button i {
+      font-size: 25px; }
+  .gem-viewpost .post-content .post-thumb-and-options, .gem-viewpost .profile-feed .post-thumb-and-options, .gem-profile .post-content .post-thumb-and-options, .gem-profile .profile-feed .post-thumb-and-options {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0; }
+    .gem-viewpost .post-content .post-thumb-and-options .poster, .gem-viewpost .profile-feed .post-thumb-and-options .poster, .gem-profile .post-content .post-thumb-and-options .poster, .gem-profile .profile-feed .post-thumb-and-options .poster {
+      color: #31383a;
+      margin: 0; }
+    .gem-viewpost .post-content .post-thumb-and-options .divider, .gem-viewpost .profile-feed .post-thumb-and-options .divider, .gem-profile .post-content .post-thumb-and-options .divider, .gem-profile .profile-feed .post-thumb-and-options .divider {
+      margin-top: 18px;
+      border-bottom: 1px solid #ccc;
+      margin-left: 20px;
+      margin-right: 20px; }
+    .gem-viewpost .post-content .post-thumb-and-options .post-thumb, .gem-viewpost .profile-feed .post-thumb-and-options .post-thumb, .gem-profile .post-content .post-thumb-and-options .post-thumb, .gem-profile .profile-feed .post-thumb-and-options .post-thumb {
+      -webkit-border-radius: 500px;
+      -moz-border-radius: 500px;
+      -ms-border-radius: 500px;
+      border-radius: 500px;
+      width: 50px;
+      margin-top: -25px;
+      border: 4px solid rgba(189, 195, 199, 0.3); }
+    .gem-viewpost .post-content .post-thumb-and-options button, .gem-viewpost .profile-feed .post-thumb-and-options button, .gem-profile .post-content .post-thumb-and-options button, .gem-profile .profile-feed .post-thumb-and-options button {
+      background-color: #eaeaea;
+      position: absolute;
+      top: 10px; }
+      .gem-viewpost .post-content .post-thumb-and-options button:first-child, .gem-viewpost .profile-feed .post-thumb-and-options button:first-child, .gem-profile .post-content .post-thumb-and-options button:first-child, .gem-profile .profile-feed .post-thumb-and-options button:first-child {
+        left: 10px; }
+      .gem-viewpost .post-content .post-thumb-and-options button:last-child, .gem-viewpost .profile-feed .post-thumb-and-options button:last-child, .gem-profile .post-content .post-thumb-and-options button:last-child, .gem-profile .profile-feed .post-thumb-and-options button:last-child {
+        right: 10px; }
+      .gem-viewpost .post-content .post-thumb-and-options button i, .gem-viewpost .profile-feed .post-thumb-and-options button i, .gem-profile .post-content .post-thumb-and-options button i, .gem-profile .profile-feed .post-thumb-and-options button i {
+        color: #E74C3C;
+        position: absolute;
+        top: 3px;
+        left: 10px; }
+
+.gem-login.gemionic-theme {
+  background: url("../img/demo/login-bg.png") no-repeat center top; }
+
+.gem-login ion-content {
+  margin: 30px 50px 0 50px; }
+  .gem-login ion-content .gem-login--logo {
+    width: 84px; }
+  .gem-login ion-content .gem-login--text-color {
+    color: #fff; }
+  .gem-login ion-content .list.gem-login--form {
+    margin-bottom: 0; }
+    .gem-login ion-content .list.gem-login--form .item {
+      background: rgba(46, 46, 46, 0.7);
+      border: none;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      border-radius: 50px;
+      margin: 10px 0;
+      padding: 10px 0 10px 25px; }
+      .gem-login ion-content .list.gem-login--form .item:first-child {
+        margin-top: 0; }
+      .gem-login ion-content .list.gem-login--form .item:last-child {
+        margin-bottom: 0; }
+      .gem-login ion-content .list.gem-login--form .item input {
+        color: #fff; }
+  .gem-login ion-content .gem-login--submit-button {
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    border-radius: 40px;
+    border: none; }
+  .gem-login ion-content .social-button {
+    color: #fff;
+    width: 60px;
+    max-height: 60px;
+    border-radius: 500px;
+    min-height: 60px; }
+    .gem-login ion-content .social-button.google {
+      background: #E74C3C; }
+    .gem-login ion-content .social-button.facebook {
+      background: #3498DB; }
+
+.gem-menu {
+  background: #4e4e4e; }
+  .gem-menu ion-item {
+    background: #4e4e4e;
+    color: #fff;
+    border-color: rgba(46, 46, 46, 0.3); }
+    .gem-menu ion-item .item-content {
+      background: none; }
+  .gem-menu .header {
+    margin: 0;
+    padding: 10px 15px;
+    color: #fff;
+    background: #ef313d; }
+  .gem-menu .gem-menu--profile {
+    position: relative;
+    margin-bottom: -5px; }
+    .gem-menu .gem-menu--profile img {
+      width: 100%; }
+    .gem-menu .gem-menu--profile .profile-actions {
+      position: absolute;
+      bottom: 16px;
+      right: 10px; }
+      .gem-menu .gem-menu--profile .profile-actions button.button-circle {
+        border-radius: 500px;
+        border: none;
+        background: white;
+        width: 33px;
+        height: 33px;
+        position: relative; }
+        .gem-menu .gem-menu--profile .profile-actions button.button-circle i {
+          position: absolute;
+          top: 3.5px;
+          left: 8.5px;
+          font-size: 20px;
+          color: #E74C3C; }
+    .gem-menu .gem-menu--profile .profile-details {
+      position: absolute;
+      width: 100%;
+      padding: 10px 11px;
+      bottom: 0;
+      color: #fff; }
+      .gem-menu .gem-menu--profile .profile-details h1, .gem-menu .gem-menu--profile .profile-details h2, .gem-menu .gem-menu--profile .profile-details h3, .gem-menu .gem-menu--profile .profile-details h4, .gem-menu .gem-menu--profile .profile-details h5, .gem-menu .gem-menu--profile .profile-details h6 {
+        margin: 5px 0;
+        color: inherit; }

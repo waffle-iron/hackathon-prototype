@@ -1,0 +1,32 @@
+// Styles for templates/friend-list.html
+.gem-friend-list {
+	.badge.gem-badge {
+	    right: 15px;
+	    width: 35px;
+	    height: 35px;
+	    border-radius: 500px;
+	    font-size: 20px;
+	    text-align: center;
+	    line-height: 27px;
+	    display: block;
+	}
+	.gem-friend--status {
+	    position: absolute;
+	    left: 43px;
+    	top: 11px;
+	    z-index: 1;
+	    font-size: 12px;
+	    &.is-online {
+	    	color: $emerald;
+	    }
+	    &.is-away{
+	    	color: $sunflower;
+	    }
+	    &.is-busy {
+	    	color: $alizarin;
+	    }
+	    &.is-offline{
+	    	color: $silver;
+	    }
+	}
+}

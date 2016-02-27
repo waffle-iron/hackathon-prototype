@@ -22,7 +22,7 @@ angular.module('starter.services', [])
 
     object.getNext = function() {
       object.learnline = $http({
-          method: "JSONP",
+          method: "GET",
           url: LEARN_LINE.url + LEARN_LINE.search + "hase"
         })
         .success(function(data) {

@@ -1,0 +1,122 @@
+// GENERAL APP STYLE
+// The general style of the app across all screens.
+
+
+// Color scheme
+$primary-color : #ef313d;
+$secondary-color : #f8f3bc;
+$accent-color : $turquiose;
+
+// Primary Color classes - based on color scheme above
+.primary-bg-color {background-color: $primary-color;}
+.secondary-bg-color {background-color: $secondary-color;}
+.accent-bg-color {background-color: $accent-color;}
+
+// Text Color that best suits a dark or light background.
+// used for the dark/light variations of all color schemes
+
+// .gemionic-theme is the top most level class. best added to the <ion-view>
+// other .scss files will extend from this.
+.gemionic-theme {
+
+	//General styles and generic components
+	.padding-double {padding:20px;}
+	.padding-double-vertical {padding:20px 0;}
+	.padding-double-horizontal {padding:0 20px;}
+
+	//Inline Static-positioned Tabs. 
+		// See templates/profile.html and
+		// templates/view-post.html
+	.gem-tabs {
+		position: static;
+		.tab-nav.tabs, ion-tab {
+			position: static;
+		}
+		.view-container {
+			position: static;
+		}
+		.tabs {border-color:none;}
+		.tab-item {
+			background-color: $mine-shaft;
+			color: $white;
+			&.tab-item-active {
+				background-color: $primary-color;
+			}
+		}
+	}
+
+	.scroll-bar-indicator {
+		display: none;
+	}
+
+	//Styling for columns to wrap within the display
+	.row {
+		&.row-wrap {
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+			.col img {
+				width: 100%;
+			}
+		}
+		&.flush {
+			padding:0;
+			.col {
+				padding: 0;
+			}
+		}
+		&.gallery {
+			padding: 10px 0;
+			.col img {
+				border-radius:10px;
+			}
+		}
+	}
+
+	
+	// background: uses two colors: the $primary-color and $secondary-color
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3333+0,ff3333+28,f8f3bc+28,f8f3bc+100 */
+	background: $primary-color; /* Old browsers */
+	background: -moz-linear-gradient(top,  $primary-color 0%, $primary-color 28%, $secondary-color 28%, $secondary-color 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  $primary-color 0%,$primary-color 28%,$secondary-color 28%,$secondary-color 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  $primary-color 0%,$primary-color 28%,$secondary-color 28%,$secondary-color 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='$secondary-color',GradientType=0 ); /* IE6-9 */
+
+	// For the default menu bar on each screen. See templates/menu.html
+	.bar {
+		margin:10px 4px 0 4px;
+		width: auto;
+		.title {
+			font-weight: normal;
+			margin-top: 8px;
+		}
+		// background-color: $primary-color;
+		button.button {
+			background: rgba(0, 0, 0, 0.5);
+		    padding: 0 5px;
+		    border-radius: 500px;
+		    width: 50px;
+		    min-height: 50px;
+		}
+	}
+
+	ion-content {
+		margin: 50px 20px 0 20px;
+		.gem-content {
+			background-color: $white;
+		}
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		// margin-right: 10px;
+	}
+
+
+	.grid-wrapped {
+		-webkit-flex-wrap: wrap; flex-wrap: wrap;
+		.col img {
+			width:100%;
+		}
+		.height-mask {max-height:195px; overflow:hidden;}
+	}
+}
+

@@ -1,0 +1,57 @@
+// Styles for templates/menu.html
+.gem-menu {
+	@extend .primary-font;
+	background:#4e4e4e;;
+	ion-item {
+		background:#4e4e4e;
+		color: $white;
+		border-color: transparentize($mine-shaft, 0.7);
+		.item-content {
+			background:none;
+		}
+	}
+	.header {
+		margin:0;
+		padding:10px 15px;
+		color: $white;
+		background: $primary-color;
+	}
+	.gem-menu--profile {
+		position: relative;
+		margin-bottom: -5px;
+		img {
+			width: 100%;
+		}
+		.profile-actions {
+			position: absolute;
+			bottom: 16px;
+    		right: 10px;
+    		button.button-circle {
+    			border-radius: 500px;
+			    border: none;
+			    background: white;
+			    width: 33px;
+			    height: 33px;
+			    position:relative;
+			    i {
+			    	position: absolute;
+				    top: 3.5px;
+				    left: 8.5px;
+				    font-size: 20px;
+				    color: $alizarin;
+			    }
+    		}
+		}
+		.profile-details {
+			position: absolute;
+			width: 100%;
+			padding: 10px 11px;
+			bottom: 0;
+			h1,h2,h3,h4,h5,h6 {
+				margin: 5px 0;
+				color: inherit;
+			}
+			color: $white;
+		}
+	}
+}
