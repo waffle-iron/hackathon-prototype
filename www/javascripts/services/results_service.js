@@ -7,7 +7,7 @@ angular.module('hackathon')
         title: "Igel Steckbrief",
         resource_types: [
           "Bild",
-          ["Steckbrief"]
+          "Steckbrief"
         ],
         description: "Wichtige Fakten zu Igeln.",
         educational_description: ["Biologie", "Tiere"],
