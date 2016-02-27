@@ -1,16 +1,16 @@
 angular.module('hackathon')
-  .controller('SearchController', function($scope, $state, $ionicHistory, leanlineApiService) {
+  .controller('SearchController', function($scope, $state, $ionicHistory, leanlineApiService, resultService) {
     $scope.search = {
-      term: 'Pytagoras',
-      subject: 'Mathematik',
-      class: '5',
-      location: 'Aachen'
+      term: 'Igel',
+      subject: 'Biologie',
+      class: 'Sekundarstufe I'
     };
 
     $scope.performSearch = function search() {
       leanlineApiService.find($scope.search)
         .then(function(apiResponse) {
-          console.log(apiResponse.data);
+          resultService.add(apiResponse.data);
+          resultService.getAll();
         }, function(err) {
           console.log(err);
         });

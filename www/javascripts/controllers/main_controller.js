@@ -1,5 +1,5 @@
 angular.module('hackathon')
-  .controller('MainController', function($rootScope, $scope, $window, $ionicModal, $localstorage, $state, $ionicHistory) {
+  .controller('MainController', function($scope, $localstorage, $state) {
     console.log('mainController..');
   }
 );
