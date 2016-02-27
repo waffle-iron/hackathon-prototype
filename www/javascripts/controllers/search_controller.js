@@ -1,5 +1,5 @@
 angular.module('hackathon')
-  .controller('SearchController', function($rootScope, $scope, $window, $ionicModal, $localstorage, $state, $ionicHistory, leanlineApiService) {
+  .controller('SearchController', function($scope, $state, $ionicHistory, leanlineApiService) {
     $scope.search = {
       term: 'Pytagoras',
       subject: 'Mathematik',
