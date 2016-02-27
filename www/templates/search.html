@@ -1,0 +1,33 @@
+<ion-view view-title="Suche">
+  <ion-content>
+    <div class="list card">
+      <p>Suche..</p>
+
+      <form ng-submit="">
+        <div class="list">
+          <label class="item item-input">
+            <span class="input-label">Klasse</span>
+            <input type="text" ng-model="Settings.class">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Interesse</span>
+            <input type="text" ng-model="Settings.interest">
+          </label>
+          <label class="item item-input item-select">
+            <span class="input-label">Medienzentrum</span>
+            <select ng-model="Settings.centers">
+              <option>Aachen</option>
+              <option>Düsseldorf</option>
+              <option>Wuppertal</option>
+            </select>
+          </label>
+          <label class="item">
+            <button type="submit" class="button button-positive button-block">
+              Speichern
+            </button>
+          </label>
+        </div>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>
