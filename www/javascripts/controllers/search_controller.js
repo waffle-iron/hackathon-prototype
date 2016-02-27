@@ -10,7 +10,7 @@ angular.module('hackathon')
       leanlineApiService.find($scope.search)
         .then(function(apiResponse) {
           resultService.add(apiResponse.data);
-          //$state.go('app.result');
+          return $state.go('app.result', {});
         }, function(err) {
           console.log(err);
         });
