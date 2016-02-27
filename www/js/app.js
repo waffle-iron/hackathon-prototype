@@ -52,42 +52,33 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  .state('app.search', {
-    url: '/search',
+  .state('app.favourites', {
+    url: '/favourites',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/favourites.html',
+        controller: 'FavouritesCtrl'
       }
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/browse.html'
-        }
-      }
-    })
-    .state('app.playlists', {
-      url: '/playlists',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
-        }
-      }
-    })
-
-  .state('app.single', {
-    url: '/playlists/:playlistId',
+  .state('app.searches', {
+    url: '/searches',
     views: {
       'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
+        templateUrl: 'templates/searches.html',
+        controller: 'SearchesCtrl'
       }
     }
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/discover');
+})
+.constant('SERVER', {
+  url: "http://demo2144154.mockable.io"
+})
+.constant('LEARN_LINE', {
+  url: "http://www.learnline.schulministerium.nrw.de/learnline3-rest/rest/609940d5-3393-40e3-a0a7-5bdb7b87d22f",
+  search: "/search?q=",
+  facets: []
 });

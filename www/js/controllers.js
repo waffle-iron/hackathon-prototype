@@ -1,6 +1,6 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['ionic', 'starter.services'])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+.controller('AppCtrl', function($scope, $ionicModal, $timeout, $state) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -41,33 +41,30 @@ angular.module('starter.controllers', [])
   };
 })
 
+.controller('SearchesCtrl', function($scope, $stateParams) {})
+
 .controller('SettingsCtrl', function($scope, $stateParams) {})
 
-.controller('DiscoverCtrl', function($scope, $stateParams) {
-    //Initialize mock data to randomize through
-    $scope.discoveries = [
-      {
-        "title": "Hello",
-        "image": "hello.png"
-      },
-      {
-        "title": "World",
-        "image": "world.png"
-      },
-      {
-        "title": "Foo",
-        "image": "foo.png"
-      },
-      {
-        "title": "Bar",
-        "image": "bar.png"
-      },
-  ];
-  //Set initial discovery
-  $scope.currentDiscovery = angular.copy($scope.discoveries[0]);
+.controller('FavouritesCtrl', function($scope, Favourite) {
+  //Update the list of favourited items
+  console.log(Favourite);
+  $scope.favourites = Favourite.list;
+})
 
-  $scope.discover = function() {
-    var randomDiscovery = Math.round(Math.random() * ($scope.discoveries.length - 1));
-    $scope.currentDiscovery = angular.copy($scope.discoveries[randomDiscovery]);
+.controller('DiscoverCtrl', function($scope, $stateParams, Favourite, Discovery) {
+  //Set initial discovery
+  Discovery.getNext().then(function() {
+    $scope.currentDiscovery = Discovery.element;
+    console.log(Discovery.learnline);
+  });
+
+  $scope.discover = function(liked) {
+
+    if(liked) {
+      Favourite.addToList($scope.currentDiscovery);
+    }
+    Discovery.getNext().then(function() {
+      $scope.currentDiscovery = Discovery.element;
+    });
   }
 });
