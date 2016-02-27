@@ -14,7 +14,7 @@ angular.module('hackathon')
         subject: ['Biologie'],
         age_range: '5-12',
         rights_de: 'Rights',
-        competence_entry: 'verwenden E-Mail, Chat und Handy zur Kommunikation und beschreiben Vor- und Nachteile der Kommunikationsformen.',
+        competence_entry: 'Elementarbereich » Informieren und Recherchieren » TK 2',
         publisher: ['Publisher', 'publisher']
       },
       {
@@ -29,7 +29,7 @@ angular.module('hackathon')
         subject: ['Biologie'],
         age_range: '5-12',
         rights_de: 'Rights',
-        competence_entry: 'verwenden E-Mail, Chat und Handy zur Kommunikation und beschreiben Vor- und Nachteile der Kommunikationsformen.',
+        competence_entry: 'Elementarbereich » Informieren und Recherchieren » TK 2',
         publisher: ['Publisher', 'publisher']
       }
     ];
