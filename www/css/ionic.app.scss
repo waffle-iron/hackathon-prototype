@@ -32,3 +32,8 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "gemionic/single-post-and-profile";
 @import "gemionic/login";
 @import "gemionic/menu";
+
+
+.button.ion-navicon.hide {
+  display: inline-block !important;
+}

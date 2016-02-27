@@ -19,12 +19,22 @@ angular.module('hackathon')
         }
       })
 
-      .state('app.results', {
+      .state('app.result', {
         url: "/result",
         views: {
           'menuContent': {
             templateUrl: "templates/result.html",
             controller: "ResultController"
+          }
+        }
+      })
+
+      .state('app.history', {
+        url: "/history",
+        views: {
+          'menuContent': {
+            templateUrl: "templates/history.html",
+            controller: "HistoryController"
           }
         }
       })
