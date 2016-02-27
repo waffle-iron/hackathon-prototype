@@ -4,7 +4,13 @@ Dies ist ein Prototyp für das #NRWHackathon Event. Die Applikation basiert auf 
 
 ## Installation
 
-Die notwendige Software kann mit der folgenden [Anleitung](http://ionicframework.com/getting-started/) installiert werden.
+### Vorraussetzungen
+
+#### Ionic
+Ionic kann mit der [Anleitung](http://ionicframework.com/getting-started/) installiert werden.
+
+#### Abhängigkeiten
+Die Abhängigkeiten können mit dem Befehl `npm install` installiert werden.
 
 ## APK
 
