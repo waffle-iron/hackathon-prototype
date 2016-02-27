@@ -5,6 +5,7 @@ Dies ist ein Prototyp für das #NRWHackathon Event. Die Applikation basiert auf 
 ## Installation
 
 ### Vorraussetzungen
+- Node.js, natürlich mit npm.
 
 #### Ionic
 Ionic kann mit der [Anleitung](http://ionicframework.com/getting-started/) installiert werden.
