@@ -19,6 +19,25 @@ angular.module('hackathon')
         }
       })
 
+      .state('app.results', {
+        url: "/result",
+        views: {
+          'menuContent': {
+            templateUrl: "templates/result.html",
+            controller: "ResultController"
+          }
+        }
+      })
+
+      .state('app.contact', {
+        url: "/contact",
+        views: {
+          'menuContent': {
+            templateUrl: "templates/contact.html",
+          }
+        }
+      })
+
       .state('app.imprint', {
         url: "/imprint",
         views: {

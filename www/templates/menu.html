@@ -4,7 +4,7 @@ Style Files:
   project-folder/scss/menu.scss
 -->
 <ion-side-menus enable-menu-with-back-views="false">
-  <ion-side-menu-content class="gemionic-theme primary-font">
+  <ion-side-menu-content class="gemionic-theme primary-font" drag-content="false">
     <ion-nav-bar class="bar bar-clear">
       <ion-nav-back-button>
       <!-- <i class="ion-arrow-left-c"></i> -->
@@ -31,7 +31,13 @@ Style Files:
           Login
         </ion-item>
         <ion-item menu-close href="#/app/searches">
-          Alte Suche
+          Suchhistorie
+        </ion-item>
+        <ion-item menu-close href="#/app/contact">
+          Contact
+        </ion-item>
+        <ion-item menu-close href="#/app/imprint">
+          Impressum
         </ion-item>
         <!-- Usual List -->
       </ion-list>
