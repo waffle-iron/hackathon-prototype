@@ -29,7 +29,35 @@ Style Files:
               <p>
                 {{ result.description }}
               </p>
-            </li>
+            </li><hr>
+            <li>
+              <h4>Bildungsbereich</h4>
+              <span ng-repeat="edu_description in result.educational_description">
+                {{ result.edu_description }}
+              </span>
+            </li><hr>
+            <li>
+              <h4>Fach und Suchgebiet</h4>
+              <span ng-repeat="subj in result.subject">
+                {{ result.subj }}
+              </span>
+            </li><hr>
+            <li>
+              <h4>Lernalter</h4>
+              <p>{{ result.age_range }}</p>
+            </li><hr>
+            <li>
+              <h4>Urheberrecht</h4>
+              <p>{{ result.rights_de }}</p>
+            </li><hr>
+            <li>
+              <h4>Medienkompetenz</h4>
+              <p>{{ result.competence_entry }}</p>
+            </li><hr>
+            <li>
+              <h4>Herausgeber</h4>
+              <p>{{ result.competence_entry }}</p>
+            </li><hr>
           </ul>
         </div>
       </div>
