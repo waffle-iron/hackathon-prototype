@@ -14,9 +14,12 @@ Style Files:
         <div class="text-center">
         	<h3 class="profile-text-color">{{ result.title }}<h3>
         	<h6 class="profile-text-color">
-            <ul><li ng-repeat="tag in result.tags">{{ tag }}</li></ul>
+            <ul>
+              <li><i class="icon ion-person-stalker"></i></li>
+              <li ng-repeat="resource_type in result.resource_types">{{ resource_type }}</li>
+            </ul>
           </h6>
-        	<img src="http://www.tivi.de/imperia/md/images/loewenzahn/p_1er_160x170/artikelsendunglogo.gif" class="profile-thumb">
+        	<img src="{{ result.image}}" class="profile-thumb">
         </div>
 
         <div class="profile-feed">
