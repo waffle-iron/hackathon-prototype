@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>Hackathon Project</title>
 
-    <!-- compiled css output -->
-    <link href="css/ionic.app.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>Hackathon Project</title>
 
-    <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <!-- compiled css output -->
+  <link href="css/ionic.app.css" rel="stylesheet">
 
-    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
 
-    <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
 
-    <!-- Firebase -->
-    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
-    <!-- AngularFire -->
-    <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+  <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 
-    <!-- your app's js -->
-    <script src="javascripts/components/ionic_utils.js"></script>
-    <script src="javascripts/app.js"></script>
+  <!-- Firebase -->
+  <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
 
-    <script src="javascripts/config/request_whitelist.js"></script>
-    <script src="javascripts/routes.js"></script>
+  <!-- AngularFire -->
+  <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
 
-    <script src="javascripts/controllers/main_controller.js"></script>
-    <script src="javascripts/controllers/search_controller.js"></script>
-    <script src="javascripts/controllers/result_controller.js"></script>
-    <script src="javascripts/controllers/history_controller.js"></script>
+  <!-- Angular Cordova -->
+  <script src="lib/ngCordova/dist/ng-cordova.js"></script>
 
-    <script src="javascripts/services/leanline_api_service.js"></script>
-    <script src="javascripts/services/results_service.js"></script>
-  </head>
+  <!-- your app's js -->
+  <script src="javascripts/components/ionic_utils.js"></script>
+  <script src="javascripts/app.js"></script>
 
-  <body ng-app="hackathon">
-    <ion-nav-view></ion-nav-view>
-  </body>
+  <script src="javascripts/config/request_whitelist.js"></script>
+  <script src="javascripts/routes.js"></script>
+
+  <script src="javascripts/controllers/main_controller.js"></script>
+  <script src="javascripts/controllers/search_controller.js"></script>
+  <script src="javascripts/controllers/result_controller.js"></script>
+  <script src="javascripts/controllers/history_controller.js"></script>
+
+  <script src="javascripts/services/leanline_api_service.js"></script>
+  <script src="javascripts/services/results_service.js"></script>
+</head>
+
+<body ng-app="hackathon">
+  <ion-nav-view></ion-nav-view>
+</body>
+
 </html>
