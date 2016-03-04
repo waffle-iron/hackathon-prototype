@@ -60,7 +60,9 @@ Style Files:
             </div>
             <div class="item">
               <h4><strong>Medienkompetenz</strong></h4>
-              <p>{{ result.competence_entry }}</p>
+              <ul>
+                <li ng-repeat="competency in result.competence_entry">{{ competency }}</li>
+              </ul>
             </div>
           </div>
         </div>
