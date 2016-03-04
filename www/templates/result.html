@@ -6,63 +6,58 @@ Style Files:
 <ion-view view-title="" class="gemionic-theme gem-profile">
   <ion-content class="primary-font" overflow-scroll="true">
     <div class="gem-content">
-      <div class="gem-viewpost--image">
-        <div class="overlay"></div>
-        <img ng-src="{{ result.image}}" alt="">
-      </div>
-      <div class="profile-details">
-        <div class="text-center">
-        	<h3 class="profile-text-color">{{ result.title }}<h3>
-        	<h6 class="profile-text-color">
-            <ul>
-              <span ng-repeat="resource_type in result.resource_types"
-                style="background-color: rgba(85,85,85, 0.8); padding: 1px 6px; border-radius: 7px; margin: 0 5px;">
-                {{ resource_type }}
-              </span>
-            </ul>
-          </h6>
-        	<br><br><br>
-        </div>
-
-        <style>
-          .item { border: none; }
-        </style>
-
-        <div class="profile-feed" style="border-radius: 20px;">
-          <div class="list" style="border: none;">
-            <div class="item">
-              <h4><strong>Beschreibung</strong></h4>
-              <p>
-                {{ result.description }}
-              </p>
+      <div class="list gem-friend-list">
+        <div class="profile-details">
+          <style>
+            . { border: none; }
+          </style>
+          <div class="profile-feed">
+            <div class="text-center">
+            	<h3>{{ result.title }}<h3>
+            	<h6>
+                <ul>
+                  <span ng-repeat="resource_type in result.resource_types"
+                    style="background-color: rgba(85,85,85, 0.8); padding: 1px 6px; margin: 0 5px;">
+                    {{ resource_type }}
+                  </span>
+                </ul>
+              </h6>
             </div>
-            <div class="item">
-              <h4><strong>Bildungsbereich</strong></h4>
-              <span ng-repeat="edu_description in result.educational_description"
-                    style="color: #fff; background-color: rgba(85,85,85, 0.8); padding: 1px 6px; border-radius: 7px; margin: 0 5px 0 0;">
-                {{ edu_description }}
-              </span>
-            </div>
-            <div class="item">
-              <h4><strong>Fach und Suchgebiet</strong></h4>
-              <span ng-repeat="subj in result.subject"
-                    style="color: #fff; background-color: rgba(85,85,85, 0.8); padding: 1px 6px; border-radius: 7px; margin: 0 5px 0 0;">
-                {{ subj }}
-              </span>
-            </div>
-            <div class="item">
-              <h4><strong>Lernalter</strong></h4>
-              <p>{{ result.age_range }}</p>
-            </div>
-            <div class="item">
-              <h4><strong>Urheberrecht</strong></h4>
-              <p>{{ result.rights_de }}</p>
-            </div>
-            <div class="item">
-              <h4><strong>Medienkompetenz</strong></h4>
-              <ul>
-                <li ng-repeat="competency in result.competence_entry">{{ competency }}</li>
-              </ul>
+            <div class="list" style="border: none;">
+              <div class="">
+                <h5><strong>Beschreibung</strong></h5><hr>
+                <p>
+                  {{ result.description }}
+                </p>
+              </div>
+              <div class="">
+                <h5><strong>Bildungsbereich</strong></h5><hr>
+                <span ng-repeat="edu_description in result.educational_description"
+                      style="color: #fff; background-color: rgba(85,85,85, 0.8); padding: 1px 6px; margin: 0 5px 0 0;">
+                  {{ edu_description }}
+                </span>
+              </div>
+              <div class="">
+                <h5><strong>Fach und Suchgebiet</strong></h5><hr>
+                <span ng-repeat="subj in result.subject"
+                      style="color: #fff; background-color: rgba(85,85,85, 0.8); padding: 1px 6px; margin: 0 5px 0 0;">
+                  {{ subj }}
+                </span>
+              </div>
+              <div class="">
+                <h5><strong>Lernalter</strong></h5><hr>
+                <p>{{ result.age_range }}</p>
+              </div>
+              <div class="">
+                <h5><strong>Urheberrecht</strong></h5><hr>
+                <p>{{ result.rights_de }}</p>
+              </div>
+              <div class="">
+                <h5><strong>Medienkompetenz</strong></h5><hr>
+                <ul>
+                  <li ng-repeat="competency in result.competence_entry">{{ competency }}</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
