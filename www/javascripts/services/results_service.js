@@ -1,30 +1,30 @@
 angular.module('hackathon')
   .factory('resultService', function($q, $http) {
     var object = {
-      data: {}
+      data: []
     };
 
     object.add = function(resultsObj) {
-      object.data = resultsObj.hits;
+      var hits = resultsObj.hits;
+      console.log(hits);
+      hits.hits.forEach(function(hit) {
+        object.data.push({
+          id: hit._id,
+          image: hit._source["lom:relation_hasThumbnail"],
+          title: hit._source["lom:general_title"],
+          resource_types: hit._source["lom:educational_learningRehit._sourceType"],
+          description: hit._source["lom:general_description"],
+          subject: hit._source["ll3:classificationDisciplineEntry"],
+          age_range: hit._source["lom:educational_typicalAgeRange"],
+          rights_de: hit._source["lom:rights_de"],
+          competence_entry: hit._source["lom:classificationCompetencyEntry"],
+          publisher: hit._source["lom:publisher"]
+        });
+      });
     }
 
     object.getResult = function() {
-      var result = object.data.hits[0];
-      var source = result._source;
-      console.log(object.data);
-      data = {
-        id: result._id,
-        image: source["lom:relation_hasThumbnail"],
-        title: source["lom:general_title"],
-        resource_types: source["lom:educational_learningResourceType"],
-        description: source["lom:general_description"],
-        subject: source["ll3:classificationDisciplineEntry"],
-        age_range: source["lom:educational_typicalAgeRange"],
-        rights_de: source["lom:rights_de"],
-        competence_entry: source["lom:educational_typicalAgeRange"],
-        publisher: source["lom:publisher"]
-      };
-      return data;
+      return object.data[0];
     }
 
     return object;
