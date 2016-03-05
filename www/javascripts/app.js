@@ -7,7 +7,8 @@
 angular.module('hackathon', [
   'ionic',
   'ionic.utils',
-  'firebase'
+  'firebase',
+  'ionTinderCards'
 ])
 
   .run(function ($ionicPlatform) {

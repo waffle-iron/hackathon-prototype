@@ -11,55 +11,73 @@ Style Files:
           <style>
             . { border: none; }
           </style>
-          <div class="profile-feed">
-            <div class="text-center">
-            	<h3>{{ result.title }}<h3>
-            	<h6>
-                <ul>
-                  <span ng-repeat="resource_type in result.resource_types"
-                    style="background-color: rgba(85,85,85, 0.8); padding: 1px 6px; margin: 0 5px;">
-                    {{ resource_type }}
-                  </span>
-                </ul>
-              </h6>
-            </div>
-            <div class="list" style="border: none;">
-              <div class="">
-                <h5><strong>Beschreibung</strong></h5><hr>
-                <p>
-                  {{ result.description }}
-                </p>
+          <!-- No results found, then show pulsing not found -->
+          <td-pulse ng-if="pulse">
+            <i class="icon ion-alert-circle">
+          </td-pulse>
+          <td-cards delegate-handle="cards" ng-if="cards.length > 0">
+            <td-card ng-repeat="result in cards"
+              on-transition-left="dislike($index)"
+              on-transition-right="like($index)"
+              on-destroy="remove($index)">
+              <div class="profile-feed">
+                <div class="text-center">
+                	<h3>{{ result.title }}<h3>
+                	<h6>
+                    <ul>
+                      <span ng-repeat="resource_type in result.resource_types"
+                        style="background-color: rgba(85,85,85, 0.8); padding: 1px 6px; margin: 0 5px;">
+                        {{ resource_type }}
+                      </span>
+                    </ul>
+                  </h6>
+                </div>
+                <div class="list" style="border: none;">
+                  <div class="">
+                    <h5><strong>Beschreibung</strong></h5><hr>
+                    <p>
+                      {{ result.description }}
+                    </p>
+                  </div>
+                  <div class="">
+                    <h5><strong>Bildungsbereich</strong></h5><hr>
+                    <span ng-repeat="edu_description in result.educational_description"
+                          style="color: #fff; background-color: rgba(85,85,85, 0.8); padding: 1px 6px; margin: 0 5px 0 0;">
+                      {{ edu_description }}
+                    </span>
+                  </div>
+                  <div class="">
+                    <h5><strong>Fach und Suchgebiet</strong></h5><hr>
+                    <span ng-repeat="subj in result.subject"
+                          style="color: #fff; background-color: rgba(85,85,85, 0.8); padding: 1px 6px; margin: 0 5px 0 0;">
+                      {{ subj }}
+                    </span>
+                  </div>
+                  <div class="">
+                    <h5><strong>Lernalter</strong></h5><hr>
+                    <p>{{ result.age_range }}</p>
+                  </div>
+                  <div class="">
+                    <h5><strong>Urheberrecht</strong></h5><hr>
+                    <p>{{ result.rights_de }}</p>
+                  </div>
+                  <div class="">
+                    <h5><strong>Medienkompetenz</strong></h5><hr>
+                    <ul>
+                      <li ng-repeat="competency in result.competence_entry">{{ competency }}</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="">
-                <h5><strong>Bildungsbereich</strong></h5><hr>
-                <span ng-repeat="edu_description in result.educational_description"
-                      style="color: #fff; background-color: rgba(85,85,85, 0.8); padding: 1px 6px; margin: 0 5px 0 0;">
-                  {{ edu_description }}
-                </span>
-              </div>
-              <div class="">
-                <h5><strong>Fach und Suchgebiet</strong></h5><hr>
-                <span ng-repeat="subj in result.subject"
-                      style="color: #fff; background-color: rgba(85,85,85, 0.8); padding: 1px 6px; margin: 0 5px 0 0;">
-                  {{ subj }}
-                </span>
-              </div>
-              <div class="">
-                <h5><strong>Lernalter</strong></h5><hr>
-                <p>{{ result.age_range }}</p>
-              </div>
-              <div class="">
-                <h5><strong>Urheberrecht</strong></h5><hr>
-                <p>{{ result.rights_de }}</p>
-              </div>
-              <div class="">
-                <h5><strong>Medienkompetenz</strong></h5><hr>
-                <ul>
-                  <li ng-repeat="competency in result.competence_entry">{{ competency }}</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+            </td-card>
+          </td-cards>
+
+          <!--
+          <td-controls ng-if="cards.length > 0">
+              <td-control-button action="no" icon="ion-close" ng-click="swipeLeft()"></td-control-button>
+              <td-control-button action="yes" icon="ion-heart" ng-click="swipeRight()"></td-control-button>
+          </td-controls>
+          -->
         </div>
       </div>
     </div>

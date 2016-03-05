@@ -21,11 +21,15 @@ angular.module('hackathon')
           publisher: hit._source["lom:publisher"]
         });
       });
-    }
+    };
 
     object.getResult = function() {
       return object.data[0];
-    }
+    };
+
+    object.getAll = function() {
+      return object.data;
+    };
 
     return object;
   });
