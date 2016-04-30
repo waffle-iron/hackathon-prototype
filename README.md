@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/publicplan/hackathon-prototype.png?label=ready&title=Ready)](https://waffle.io/publicplan/hackathon-prototype)
 # Lernfinder Prototyp
 
 Dies ist ein Prototyp für das #NRWHackathon Event. Die Applikation basiert auf dem [Ionic Framework](http://ionicframework.com/).
